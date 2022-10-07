@@ -1,0 +1,227 @@
+:root {
+    --main-white-color: #f2f2f2;
+    --main-black-color: black;
+    --main-blue-color: blue;
+    font-family: 'Electrolize', sans-serif;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body {
+    font: 15px/1.5 'Electrolize', sans-serif;
+    color:white;
+    /* IE FIX*/
+    /* display: flex; */
+    /* flex-direction: column;  */
+  }
+  
+  /* CONTAINER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .wrapper > * {
+    padding: 20px;
+  }
+  
+  
+  /* HEADER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-header {
+    background: var(--main-black-color);
+    color: grey;
+  }
+
+  .page-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .page-header ul {
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .page-header ul li:not(:last-child) {
+    padding-right: 15px;
+  }
+  
+  .page-header .cta-contact {
+    font-family: inherit;
+    font-size: 2.8rem;
+    padding: 5px 18px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  
+  /* MAIN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 350px;
+    background: var(--main-blue-color)
+      url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
+      center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-white-color);
+  }
+  
+  .page-main div {
+    max-width: 500px;
+  }
+  
+  .page-main h1 {
+    margin-bottom: 20px;
+  }
+  
+  .page-main p + p {
+    margin-top: 10px;
+  }
+  
+  
+  /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--main-white-color);
+  }
+  
+  .page-footer ul {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .page-footer ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  
+  /* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (min-width: 550px) {
+    .page-header ul {
+      width: auto;
+      margin-top: 0;
+    }
+  
+    .page-header .cta-contact {
+      order: 1;
+    }
+  
+    .page-footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .page-footer ul {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .page-main {
+      padding-left: 90px;
+    }
+  }
+
+  /*Deception*/
+  .page-decept {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-grow: 1;
+    min-height: 350px;
+    background: var(--main-blue-color)
+      url(https://thinkbuthow.com/wp-content/uploads/2021/08/Self-Deception-Image.jpeg) no-repeat
+      right / cover;
+    background-blend-mode:multiply;
+    color: var(--main-white-color);
+  }
+/*Mind works*/
+  .page-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-grow: 1;
+    min-height: 350px;
+    background-color: blue;
+      /* url(https://thinkbuthow.com/wp-content/uploads/2021/08/Self-Deception-Image.jpeg) no-repeat */
+      /* right / cover; */
+    background-blend-mode:difference;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    /* text-size-adjust:  20px; */
+  }
+
+  .page-inversion {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-content: flex-end; */
+    flex-grow: 1;
+    min-height: 350px;
+    /* background: var(grey)
+    url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
+      center / cover;  */
+    background: white;
+    color:white;
+    background-color: lightslategray;
+
+  }
+
+  a:link{
+    font-size: 20px;  
+    border-style: solid;
+    border-color: red;
+    border-width: .3rem;
+    position: relative;
+    padding: 5px;
+    width: 250px;
+    
+}
+  a:visited {
+    color: grey;
+  }
+
+  a:hover {
+    color: #AF85E4;
+    text-decoration: none;
+  }
