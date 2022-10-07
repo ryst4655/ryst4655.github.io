@@ -29,9 +29,7 @@
   body {
     font: 15px/1.5 'Electrolize', sans-serif;
     color:white;
-    /* IE FIX*/
-    /* display: flex; */
-    /* flex-direction: column;  */
+
   }
   
   /* CONTAINER
@@ -108,24 +106,7 @@
     margin-top: 10px;
   }
   
-  
-  /* FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .page-footer {
-    display: flex;
-    flex-direction: column-reverse;
-    background: var(--main-white-color);
-  }
-  
-  .page-footer ul {
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  
-  .page-footer ul li:not(:last-child) {
-    margin-right: 20px;
-  }
+
   
   
   /* MQ
