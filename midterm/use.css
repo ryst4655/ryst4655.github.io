@@ -29,11 +29,10 @@
   body {
     font: 15px/1.5 'Electrolize', sans-serif;
     color:white;
+    
 
   }
   
-  /* CONTAINER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -45,8 +44,6 @@
   }
   
   
-  /* HEADER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .page-header {
     background: var(--main-black-color);
     color: grey;
@@ -78,9 +75,7 @@
     border-radius: 5px;
   }
   
-  
-  /* MAIN
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
   .page-main {
     display: flex;
     flex-direction: column;
@@ -108,9 +103,6 @@
   
 
   
-  
-  /* MQ
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   @media screen and (min-width: 550px) {
     .page-header ul {
       width: auto;
