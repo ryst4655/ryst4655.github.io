@@ -183,8 +183,8 @@
   
   .page-assign {
     display: flex;
-    flex-direction:row;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: left;
     /* align-content: flex-end; */
     flex-grow: 3;
     min-height: 350px;
