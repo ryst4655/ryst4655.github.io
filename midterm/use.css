@@ -183,10 +183,10 @@
   
   .page-assign {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction:column;
     justify-content: space-between;
     /* align-content: flex-end; */
-    flex-grow: 2;
+    flex-grow: 1;
     min-height: 350px;
     /* background: var(grey)
     url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
