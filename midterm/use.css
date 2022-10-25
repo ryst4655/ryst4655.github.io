@@ -194,8 +194,8 @@
     background: black;
     color:black;
     background-color: White;
-    border-style: dotted;
-    text-decoration: none;
+    border-style: none;
+    text-decoration: underline !important;
     border-width: 2px;
     ;
 
@@ -229,4 +229,13 @@
     padding: 5px;
     width: 250px;
     
+}
+
+b:visited {
+  color: grey;
+}
+
+b:hover {
+  color: #AF85E4;
+  text-decoration: none;
 }
