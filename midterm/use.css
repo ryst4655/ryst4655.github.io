@@ -184,7 +184,7 @@
   .page-assign {
     display: flex;
     flex-direction:column-reverse;
-    justify-content: left;
+    justify-content: space-between;
     /* align-content: flex-end; */
     flex-grow: 2;
     min-height: 350px;
