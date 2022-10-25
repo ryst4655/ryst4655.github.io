@@ -46,7 +46,7 @@
   
   .page-header {
     background: var(--main-black-color);
-    color: grey;
+    color: white;
   }
 
   .page-header nav {
