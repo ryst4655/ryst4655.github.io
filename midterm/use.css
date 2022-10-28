@@ -219,23 +219,3 @@
     color: #AF85E4;
     text-decoration: none;
   }
-
-  b:link{
-    font-size: 30px;  
-    border-style: none;
-    border-color: black;
-    border-width: .3rem;
-    position: relative;
-    padding: 5px;
-    width: 250px;
-    
-}
-
-b:visited {
-  color: grey;
-}
-
-b:hover {
-  color: #AF85E4;
-  text-decoration: none;
-}
