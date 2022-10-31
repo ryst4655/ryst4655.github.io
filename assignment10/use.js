@@ -1,4 +1,4 @@
-// Problem 1 - creating employee list as JSON
+// Problem 1
 
 let employeeList =
 {"employees" : [
@@ -28,7 +28,7 @@ let employeeList =
 console.log(employeeList);
 
 
-// Problem 2 - Create company in JSON
+// Problem 2
 
 let company = 
     { "companyName" : "Tech Stars",
@@ -58,7 +58,7 @@ let company =
      ]
     }
 
-    // Problem 3 - Add 4th employee to list
+    // Problem 3
 
 console.log(company);
 
@@ -73,7 +73,7 @@ company.employees.push(employee);
 
 console.log(company.employees);
 
-// Problem 4 - calculate total salary of all employees combined
+// Problem 4
 
 let salaryTotal = 0
     for (let i=0; i < company.employees.length; i++){
@@ -81,7 +81,7 @@ let salaryTotal = 0
     }
     console.log(salaryTotal);
 
-// Problem 5 - Increasing eligible salaries by 10% and then making them ineligible
+// Problem 5 
 
 for (let i=0; i < company.employees.length; i++){
     if(company.employees[i]["raise_eligible"]=== true){
@@ -91,7 +91,7 @@ for (let i=0; i < company.employees.length; i++){
 }
 console.log(company.employees);
 
-// Problem 6 - Work From Home addition
+// Problem 6 
 
 let check = false;
 let wfh = ['Anna','Sam'];
