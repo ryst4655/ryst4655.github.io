@@ -3,37 +3,37 @@ window.addEventListener('load',getQuote);
 const quoteButton = document.querySelector('.new-quote');
 quoteButton.addEventListener('click',getQuote);
 
-const punchButton = document.querySelector('.punchline');
-punchButton.addEventListener('click',getPunch);
+const punchButton = document.querySelector('.line');
+punchButton.addEventListener('click',getJoke);
 
 const endpoint = 'https://official-joke-api.appspot.com/random_joke'
-let punch;
+let pt2;
 
 async function getQuote(){
     let text = await fetch(endpoint)
-    let response = await text.text();
+    let answer = await text.text();
 
-    let json_response = JSON.parse(response);
+    let json_response = JSON.parse(answer);
     console.log(json_response);
-    console.log(json_response['setup']);
-    punch = json_response['punchline'];
-    displayQuote(json_response['setup']);
+    console.log(json_response['start']);
+    pt2 = json_response['line'];
+    displayQuote(json_response['start']);
 }
 
-function displayQuote(x){
-    document.getElementById('js-punchline-text').textContent = "";
-    document.getElementById('js-quote-text').textContent = x;
+function displayQuote(y){
+    document.getElementById('js-line-text').textContent = "";
+    document.getElementById('js-quote-text').textContent = y;
 }
 
-async function getPunch(x){
+async function getJoke(y){
     let text = await fetch(endpoint)
-    let response = await text.text();
+    let answer = await text.text();
 
-    let json_response = JSON.parse(response);
-    console.log([punch]);
-    displayPunch([punch]);
+    let json_response = JSON.parse(answer);
+    console.log([pt2]);
+    show([pt2]);
 }
 
-function displayPunch(x){
-    document.getElementById('js-punchline-text').textContent = x;
+function show(y){
+    document.getElementById('js-line-text').textContent = y;
 }
