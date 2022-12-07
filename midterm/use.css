@@ -28,7 +28,7 @@
   
   body {
     font: 15px/1.5 'Electrolize', sans-serif;
-    color:white;
+    color:black;
     
 
   }
@@ -64,7 +64,7 @@
   }
   
   .page-header ul li:not(:last-child) {
-    padding-right: 15px;
+    padding-right: 20px;
   }
   
   .page-header .cta-contact {
@@ -77,16 +77,17 @@
   
 
   .page-main {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
     min-height: 350px;
     background: var(--main-blue-color)
-      url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
+      url(https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/brain/brain-anatomy-hero.ashx?h=500&iar=0&mh=500&mw=1300&w=1297&hash=4270ECB909081093C6EC161D9EDD64BC) no-repeat
       center / cover;
     background-blend-mode: luminosity;
-    color: var(--main-white-color);
+    color: black;
   }
   
   .page-main div {
@@ -103,10 +104,12 @@
   
 
   
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 440px) {
     .page-header ul {
       width: auto;
       margin-top: 0;
+      font-size: 15px;
+    
     }
   
     .page-header .cta-contact {
@@ -124,13 +127,26 @@
     }
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 640px) {
     body {
-      font-size: 18px;
+      font-size: 15px;
+    }
+    .page-header ul {
+      width: auto;
+      margin-top: 0;
+      font-size: 17px;
+      
+    margin: 0.8em 0;
     }
   
+    .a-link{
+      margin: 0.6em 0;
+    }
     .page-main {
       padding-left: 90px;
+    }
+    .column {
+      width: 100%;
     }
   }
 
@@ -141,11 +157,11 @@
     justify-content: left;
     flex-grow: 1;
     min-height: 350px;
-    background: var(--main-blue-color)
-      url(https://thinkbuthow.com/wp-content/uploads/2021/08/Self-Deception-Image.jpeg) no-repeat
+    background: 
+      url(https://www.creativefabrica.com/wp-content/uploads/2021/03/24/Light-purple-Marble-texture-background-Graphics-9910404-1.png) no-repeat
       right / cover;
     background-blend-mode:multiply;
-    color: var(--main-white-color);
+    color: black;
   }
 /*Mind works*/
   .page-works {
@@ -154,20 +170,20 @@
     justify-content: left;
     flex-grow: 1;
     min-height: 350px;
-    background-color: blue;
+    background-color:teal;
       /* url(https://thinkbuthow.com/wp-content/uploads/2021/08/Self-Deception-Image.jpeg) no-repeat */
       /* right / cover; */
     background-blend-mode:difference;
-    color: white;
-    padding: 30px;
-    margin: 20px;
+    color: black;
+    /* padding: 30px;
+    margin: 20px; */
     /* text-size-adjust:  20px; */
   }
 
   .page-inversion {
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: left;
     /* align-content: flex-end; */
     flex-grow: 1;
     min-height: 350px;
@@ -175,7 +191,7 @@
     url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
       center / cover;  */
     background: white;
-    color:white;
+    color:black;
     background-color: lightslategray;
 
   }
@@ -204,11 +220,12 @@
   a:link{
     font-size: 20px;  
     border-style: solid;
-    border-color: red;
+    border-color: grey;
     border-width: .3rem;
     position: relative;
     padding: 5px;
     width: 250px;
+    color:grey;
     
 }
   a:visited {
@@ -219,3 +236,25 @@
     color: #AF85E4;
     text-decoration: none;
   }
+
+  #bot a:link {
+    font-size: 20px;  
+    border-style: none;
+    /* border-color: none; */
+    border-width: .3rem;
+    position: relative;
+    padding: 5px;
+    width: 250px;
+    color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 12px;
+}
+
+
