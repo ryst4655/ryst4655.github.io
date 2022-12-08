@@ -46,7 +46,7 @@
   
   .page-header {
     background: var(--main-black-color);
-    color: white;
+    color: grey;
   }
 
   .page-header nav {
@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
   }
   
   .page-header ul {
@@ -106,9 +107,10 @@
   
   @media screen and (min-width: 440px) {
     .page-header ul {
-      width: auto;
+      width:fit-content;
       margin-top: 0;
-      font-size: 15px;
+      font-size: 15px; 
+  
     
     }
   
@@ -125,18 +127,21 @@
     .page-footer ul {
       margin-bottom: 0;
     }
+
+    .column{
+      width: 50%;
+    }
   }
   
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 600px) {
     body {
       font-size: 15px;
     }
-    .page-header ul {
-      width: auto;
-      margin-top: 0;
-      font-size: 17px;
-      
-    margin: 0.8em 0;
+    .page-header nav {
+      float: none;
+      width: 100%;
+   
+     
     }
   
     .a-link{
@@ -228,12 +233,12 @@
     color:grey;
     
 }
-  a:visited {
+  /* a:visited {
     color: grey;
-  }
+  } */
 
   a:hover {
-    color: #AF85E4;
+    color: whitesmoke;
     text-decoration: none;
   }
 
