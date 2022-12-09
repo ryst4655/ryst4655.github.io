@@ -222,6 +222,24 @@
 
   }
 
+  .page-dig {
+    display: flex;
+    flex-direction:column;
+    justify-content: left;
+    /* align-content: flex-end; */
+    flex-grow: 1;
+    min-height: 350px;
+    /* background: var(grey)
+    url(https://www.trustontrial.com/wp-content/uploads/sites/665/2018/05/Mental-Capacity.jpg) no-repeat
+      center / cover;  */
+    background: white;
+    color:black;
+    background-color: maroon;
+
+  }
+
+
+
   a:link{
     font-size: 20px;  
     border-style: solid;
