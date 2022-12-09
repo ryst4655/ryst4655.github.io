@@ -1,6 +1,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .headingcontainer{
@@ -25,7 +27,7 @@ body{
     margin-bottom: 10px;
     font-size: 24px;
     padding: 5px;
-    box-shadow: 1px 1px 3px 1px black;
+    box-shadow: 1px 1px 3px 1px white;
 
 }
 
@@ -33,10 +35,11 @@ body{
     width: 30px;
     height: 30px;
 border: none;
-border-bottom: black solid 1px; 
+border-bottom: white solid 1px; 
 padding: 10px;
 margin-left: 15px;
 margin-bottom: 50px;
+color:white;
 
 }
 
@@ -51,7 +54,7 @@ margin-bottom: 50px;
 }
 
 .lettersection{
-    width: 50vw;
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -62,7 +65,7 @@ cursor : pointer;
 }
 
 .bg{
-    background-color: red;
+    background-color:blue;
     color: white;
 }
 
@@ -80,7 +83,7 @@ background-color:#00539CFF;
 height: 30vh;
 text-align: center;
 transition-duration: 0.5;
-color: white;
+color: red;
 
 }
 
@@ -98,7 +101,7 @@ color: white;
     border: solid 1px;
     padding: 10px;
     width: 40vw;
-    background-color:#00539CFF;
+    background-color:green;
     height: 30vh;
     text-align: center;
     transition-duration: 0.5;
