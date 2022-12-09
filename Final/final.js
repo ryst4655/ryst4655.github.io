@@ -23,7 +23,7 @@ alphabetArray.map((letter)=>{
 })
 
 
-
+//
  fetch("https://random-words-api.vercel.app/word") 
  .then(response=> {return response.json()})
  .then(data => {const received = data[0].word;
