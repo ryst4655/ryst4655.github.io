@@ -30,7 +30,7 @@ alphabetArray.map((letter)=>{
     const word = received.toLowerCase();
 game(word);
 })
-.catch(error => wordsection.innerHTML = "Failed to load word. Please refresh")
+.catch(error => wordsection.innerHTML = "Failed")
 
 
 
@@ -80,8 +80,8 @@ if(falseCount===7){
     document.querySelectorAll(".alphabet").forEach(each=> {each.removeEventListener('click', selectLetter)});
     document.querySelector(".gameover").classList.add("viewgameover");
     document.getElementById("correctword").innerText = `The correct word was: ${fetchword}`;
-  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-  document.body.style.backgroundColor = rndCol;
+    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    document.body.style.backgroundColor = rndCol;
 
 }
 }

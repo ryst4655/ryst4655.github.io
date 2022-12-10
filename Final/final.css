@@ -11,6 +11,15 @@ body{
     color: #00539CFF
 }
 
+.alphabet{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px white;
+
+}
+
 .game-container{
 
     width: 60vw;
@@ -22,14 +31,7 @@ body{
 }
 
 
-.alphabet{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    padding: 5px;
-    box-shadow: 1px 1px 3px 1px white;
 
-}
 
 .wordletter {
     width: 30px;
@@ -43,6 +45,10 @@ color:white;
 
 }
 
+.bg{
+    background-color:blue;
+    color: white;
+}
 .wordsection{
 
     margin-top: 80px;
@@ -60,14 +66,20 @@ color:white;
     margin: auto;
 }
 
+.viewwin{
+    visibility: visible;
+}
+
+.blurr{
+background-color: rgba(0, 0, 0, 0.4) ;
+}
+
+
 .lettersection:hover{
 cursor : pointer;
 }
 
-.bg{
-    background-color:blue;
-    color: white;
-}
+
 
 .gameover{
     visibility: hidden;
@@ -109,68 +121,4 @@ color: red;
 
 }
 
-.viewwin{
-    visibility: visible;
-}
 
-.blurr{
-background-color: rgba(0, 0, 0, 0.4) ;
-}
-
-@media (max-width: 600px) {
-
-    .wordletter{
-        width: 10px;
-        margin-top: 10px;
-    }
-
-    .game-container{
-        margin-top: 5vh;
-        width: 70vw;
-    }
-
-    .lettersection{
-        width: 100%;
-    }
-    
-}
-
-@media (max-width: 480px) {
-
-    .wordletter{
-        width: 5px;
-        margin-top: 0px;
-        margin-bottom: 25px;
-        height: 20px;
-    }
-
-    .game-container{
-        margin-top: 3vh;
-    }
-
-    .alphabet{
-        font-size: 14px;
-    }
-
-    .wordletter{
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .win {
-        width : 70vw;
-        margin-left: -35vw;
-
-    }
-
-    .gameover{
-        width : 70vw;
-        margin-left: -35vw;
-    }
-
-    .wordsection {
-        margin-top: 40px;
-    }
-    
-    
-}
